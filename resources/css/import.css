@@ -59,6 +59,13 @@ html {
 .left-column nav ul li {
   text-transform: uppercase;
   font-size: 17px;
+  padding-top: 15px;
+}
+.left-column nav ul li a {
+  text-decoration: none;
+}
+.left-column .contact-information {
+  margin: 50px 0;
 }
 .left-column .contact-information ul li {
   font-size: 17px;
@@ -127,12 +134,18 @@ html {
 .right-column ul li span {
   display: block;
   width: 400px;
-  text-align: center;
-  margin: 0 auto;
+  margin: 10px auto 10px auto;
+  line-height: 19px;
 }
 .right-column ul li a {
   font-size: 100%;
   text-transform: uppercase;
+  text-decoration: underline;
+  color: #000;
+}
+.right-column ul li a:visited,
+.right-column ul li a active {
+  color: #000;
 }
 .right-column ul li:first-child {
   padding-top: 10px;
@@ -273,7 +286,7 @@ html {
   text-transform: capitalize;
 }
 /* ====max-width768px====*/
-@media screen and (max-width: 1244px) {
+@media screen and (max-width: 1044px) {
   body {
     position: relative;
     padding-bottom: 300px;

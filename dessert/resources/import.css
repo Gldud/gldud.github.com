@@ -1,0 +1,308 @@
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+header {
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../css/img/cake.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../css/img/cake.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+html,
+body {
+  background-color: #fff;
+  font-family: 'Yantramanav', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+/* ----------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ----------------------------------------------- */
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+section {
+  padding: 80px 0;
+}
+/* ----- HEADINGS ----- */
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 180%;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #fa3469;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+/* ----- PARAGRAPHS ----- */
+/* ----- ICONS ----- */
+/* ----- LINKS ----- */
+/* ----- BUTTONS ----- */
+/* ----------------------------------------------- */
+/* HEADER */
+/* ----------------------------------------------- */
+/* Main navi */
+header .main-nav {
+  width: 500px;
+  margin: 0 auto;
+  list-style: none;
+  margin-top: 55px;
+}
+header .main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+header .main-nav li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 105%;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+/* Mobile navi */
+.mobile-nav-icon {
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+}
+.mobile-nav-icon i {
+  font-size: 200%;
+  color: #fff;
+}
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 40%;
+  left: 50%;
+  color: #fff;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.hero-text-box h1 {
+  text-align: center;
+}
+.section-about_our_cake {
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/background-cake.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/background-cake.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+.section-about_our_cake p {
+  text-align: center;
+}
+.section-about_our_cake .merit li {
+  padding-top: 18px;
+  padding-left: 20px;
+}
+.section-about_our_cake .merit li span {
+  font-size: 125%;
+}
+.section-about_our_cake .merit li i {
+  font-size: 110%;
+  padding-right: 20px;
+}
+/* ----------------------------------------------- */
+/* How it works */
+/* ----------------------------------------------- */
+.section-how_it_works p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.section-how_it_works .box {
+  text-align: center;
+  padding: 2%;
+}
+.section-how_it_works .box h3 {
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+.section-how_it_works .box p {
+  font-size: 110%;
+}
+.section-how_it_works .box img {
+  width: 100px;
+  height: auto;
+}
+/* ----------------------------------------------- */
+/* Cakes */
+/* ----------------------------------------------- */
+.section-cakes {
+  padding: 0;
+}
+.section-cakes .cakes-showcase {
+  list-style: none;
+  width: 100%;
+}
+.section-cakes .cakes-showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+.section-cakes .cakes-showcase li .cake-photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+  height: 225px;
+}
+.section-cakes .cakes-showcase li .cake-photo img {
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  -webkit-transform: scale(1.12);
+  -ms-transform: scale(1.12);
+  transform: scale(1.12);
+  -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+}
+.section-cakes .cakes-showcase li .cake-photo img:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  transform: scale(1.03);
+}
+/* ----------------------------------------------- */
+/* PLANS */
+/* ----------------------------------------------- */
+.section-plans .plan-box {
+  text-align: center;
+}
+.section-plans .plan-box h3 {
+  font-size: 220%;
+}
+.section-plans .plan-box ul li span.delivery-icon {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-image: url(../img/box.png);
+  background-size: contain;
+  vertical-align: -3px;
+}
+.section-plans .plan-box ul li span.free-delivery {
+  font-size: 110%;
+  padding-left: 8px;
+}
+.section-plans .plan-box ul li:last-child {
+  padding-top: 30px;
+}
+/* ----------------------------------------------- */
+/* TESTIMONIALS */
+/* ----------------------------------------------- */
+.section-testimonials .btngroup button {
+  display: inline-block;
+  position: absolute;
+  background: none;
+  top: 30%;
+  border: none;
+}
+.section-testimonials .btngroup button span {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+.section-testimonials .btngroup button.next {
+  right: -100px;
+}
+.section-testimonials .btngroup button.next span {
+  background-image: url(../img/right-arrow.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section-testimonials .btngroup button.prev {
+  left: -100px;
+}
+.section-testimonials .btngroup button.prev span {
+  background-image: url(../img/left-arrow.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section-testimonials .slide .span-1-of-3 {
+  display: none;
+}
+.section-testimonials .slide .span-1-of-3:first-child {
+  display: block;
+}
+.section-testimonials .slide .span-1-of-3:nth-child(2) {
+  display: block;
+}
+.section-testimonials .slide .span-1-of-3:nth-child(3) {
+  display: block;
+}
+/* ----------------------------------------------- */
+/* FORM */
+/* ----------------------------------------------- */
+.section-form {
+  background-color: #ECF0F1;
+}
+.section-form .contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+.section-form .contact-form input[type=text],
+.section-form .contact-form input[type=email],
+.section-form .contact-form select,
+.section-form .contact-form textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+.section-form .contact-form textarea {
+  height: 100px;
+}
+.section-form .contact-form input[type=checkbox] {
+  margin: 10px 5px 10px 0;
+}
+*:focus {
+  outline: none;
+}
+/* ----------------------------------------------- */
+/* SIGN UP */
+/* ----------------------------------------------- */
+.section-sign_up {
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/background-cake.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/background-cake.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  height: 60vh;
+}
+/* ----------------------------------------------- */
+/* FOOTER */
+/* ----------------------------------------------- */
+footer {
+  background-color: #fff;
+}
