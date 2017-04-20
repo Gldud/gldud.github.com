@@ -294,7 +294,7 @@ header .get_started_form .account span a {
 .section-about_our_cake .about_us {
   max-width: 940px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 .section-about_our_cake .about_us p {
   font-weight: 400;
@@ -1144,7 +1144,6 @@ section.section-menu .row .span-1-of-3 .menu .menu_name span {
   top: 0;
 }
 .section-testimonials .slide .view2 .row .col {
-  width: 380px;
   margin: 0 auto;
 }
 .section-testimonials .slide .view2 .row .col blockquote {
@@ -1455,4 +1454,8 @@ footer .row .span-1-of-4 ul.social-links {
   /* ----------------------------------------------- */
   /* Testimonials */
   /* ----------------------------------------------- */
+  .section-testimonials .slide .view2 {
+    max-width: 350px;
+    width: 350px;
+  }
 }
