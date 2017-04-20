@@ -1,0 +1,756 @@
+*{margin:0;padding:0}
+html{
+    width:100%;
+    height:100%;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin:0;
+    padding:0;
+    font-size: 15px;
+    text-rendering:optimizeLegibility;
+    width:100%;
+    height:100%;
+    overflow-x: hidden;
+}
+
+.bl{
+    z-index: 99;
+    position:fixed;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    background-color: rgba(0,0,0,.8);
+    }
+    
+li{list-style: none;}
+
+a{text-decoration: none;}
+
+.clearfix::after {
+    content: "";
+    display:block;
+    clear: both;
+}
+
+.wrapper{
+    max-width:1500px;
+    width:100%;
+    margin: 0 auto;
+}
+
+header{
+        button.mobile-menu{
+            display: inline-block;
+            background:none;
+            border:none;
+            display:none;
+            span{
+                background-image: url(../image/menu.png);
+                background-repeat: no-repeat;
+                display: inline-block;
+                width:20px;
+                height:20px;
+                margin-top: 15px;
+                margin-left: 12px;
+                background-size: cover;
+                text-indent: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+            &:focus{
+                outline:none;
+            }
+        }
+    
+    width:100%;
+    height:50px;
+    background-color:#13458c;
+    .search{
+        width:500px;
+        height:20px;
+        line-height: 20px;
+        margin:0 auto;
+        text-align: center;
+        background-color: #fff;
+        i{
+            color:#ccc;
+            font-size: 130%;
+        }    
+        span{
+            color:#ccc;
+            font-size: 90%;
+            vertical-align: 4px;
+            padding-left: 7px;
+        }
+    }
+    .top-btn{
+        float:right;
+        margin-right: 15px;
+       .btn{
+            display: inline-block;
+            padding:5px 20px;
+            background-color: #60C9FF;
+            border-radius: 20px;
+            text-decoration: none;
+            color:#fff;
+            font-size: 70%;
+            margin-right:5px;
+            text-transform: uppercase;
+            margin-top: 11.5px;
+        }
+        .logout{
+            background-color: #0d2f5f;
+        }
+    }
+   
+}
+nav{
+    float: left;
+    width:13.333%;
+    height:935px;
+    background-color:#314048;
+    overflow-y: hidden;
+    button{
+        background:none;
+        border:none;
+        padding-left:10px;
+        padding-top: 10px;
+        text-align: right;
+        cursor:pointer;
+        &:focus{
+            outline: none;
+        }
+        display: none;
+        i{
+            color:#F6F2EA;
+        }
+        span{
+            color:#F6F2EA;
+        }
+    }
+    ul{
+        margin:0 auto;
+        height:100%;
+        
+        li{
+            width:auto;
+            padding:15px 0;
+            padding-left: 45px;
+             a{
+                font-size: 85%;
+                 color:#d3d3d3;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-weight: 600;
+                }
+             }
+             i{
+                 font-size: 95%;
+                 color:#d3d3d3;
+                 padding-right: 5px;
+             }
+        }
+        li:hover{
+            background-color: #1c252a;
+            a{
+                color:#fff;
+            }
+            i{
+                color:#fff;
+            }
+        }
+        li:first-child{
+            margin-top: 20px;
+            a{
+                text-transform: capitalize;
+                font-size: 105%;
+            }
+            i{
+                font-size: 105%;
+            }
+            &:hover{
+                background-color: #314048;
+                a{
+                    color:#d3d3d3;
+                }
+                i{
+                    color:#d3d3d3;
+                }
+            }
+        }
+}
+.main-contents{
+    width:60%;
+    float:left;
+    h2{
+         margin-top: 20px;
+         text-transform: uppercase;
+         font-weight: 600;
+         text-align: center;
+         font-size: 115%;
+         position:relative;
+         button.chart-button{
+             background:none;
+             border:none;
+             display: inline-block;
+             position: absolute;
+             top:10%;
+             cursor:pointer;
+             left:90%;
+             display: none;
+             &:focus{
+                 outline:none;
+             }
+             span{
+                 text-indent: 100%;
+                 white-space: nowrap;
+                 overflow: hidden;
+                 width:32px;
+                 height:32px;
+                 display:inline-block;
+                 background-image:url(../image/pie-chart.png);
+                 background-size:cover;
+                 background-repeat:no-repeat;
+                 }
+             }
+         }
+    .date{
+        margin-top: 10px;
+        .select_date{
+            text-align: center;
+                i{
+                    font-size: 130%;
+                    vertical-align: -4px;
+                    padding-right: 7px;
+                }
+                span{
+                    font-size: 100%;
+                    vertical-align: middle;
+                }
+            }
+        }
+   
+    .date_bar{
+        width:100%;
+        background-color:#c9ddf5;
+        height:30px;
+        margin-top: 10px;
+        position: relative;
+        z-index: 1;
+            ul{
+                
+                li{
+                    display: inline-block;
+                    color:#fff;
+                    line-height: 30px;
+                    width:6.5%;
+                    padding:0 1%;
+                    font-size: 85%;
+                    text-align: center;
+                    i{
+                         color:#fff;
+                         
+                    }
+                }
+            }
+        }
+    .expense_icon_collection{
+        ul{
+            margin-top: 10px;
+            text-align: center;
+            li{
+                display: inline-block;
+                padding: 0 1.5%;
+                width:7%;
+                margin:0 2%;
+               .icon{
+                       display: inline-block;
+                       background-repeat: no-repeat;
+                       background-position: center 2px;
+                       background-size: contain;
+                       width:40px;
+                       height:40px;
+                       text-indent:100%;
+                       overflow: hidden;
+                       white-space: nowrap;
+                    }
+                .eati{
+                       background-image: url(../image/eat_change.png);
+                       width:50px;
+                       height:50px;
+                    }
+                .takei{
+                       background-image: url(../image/take.png);
+                    }
+                .seei{
+                      background-image: url(../image/see.png);
+                   }
+                .shopi{
+                      background-image: url(../image/shop.png);
+                    }
+                .sleepi{
+                      background-image: url(../image/sleep.png);
+                    }
+                .etci{
+                      background-image: url(../image/etc.png);
+                    }
+                .description{
+                      display: block;
+                      width:100%;
+                      text-align: center;
+                      text-transform: capitalize;
+                      color:#c4c4c4;
+                      font-weight: 600;
+                      position: relative;
+                      top:-2px;
+                 }
+             }
+            li.on{
+                   border:4px #c9dbf2 solid;
+                   border-radius: 10px;
+                .description{
+                          color:#000;
+                        }
+                    }
+                }
+            }
+    .container{ 
+         .expenses__list{
+                margin-top: 15px;
+                float:left;
+                width:48%;
+                height:450px;
+                background-color: #edf0f2;
+                padding:20px 60px;
+                font-size: 120%;
+                overflow-y: scroll;
+                position: relative;
+                button.add{
+                    display: inline-block;
+                    position: absolute;
+                    top:80%;
+                    left:50%;
+                    transform: translateX(-50%);
+                    background:none;
+                    border:none;
+                    display: none;
+                    span{
+                     background-image: url(../image/add.png);
+                     display: inline-block;
+                     width:55px;
+                     height:55px;
+                     border:none;
+                     background-repeat: no-repeat;
+                     text-indent: 100%;
+                     white-space: nowrap;
+                     overflow: hidden;
+                     background-size: cover;
+                     }
+                     &:focus{
+                         outline: none;
+                     }
+                }
+        .item{
+                margin-top:15px;
+            img{
+                width:26px;
+                height:26px;
+                float:left;
+                padding-right: 15px;
+                
+            }
+            .item_description{
+                float:left;
+                
+            }
+            .right{
+                float:right;
+                .item__value{
+                    float: left;
+                    transition: transform 0.3s;
+                    color:#000;
+                }
+                .item__delete{
+                    float: left;
+                    .item__delete--btn {
+                    font-size: 22px;
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+                    display: inline-block;
+                    vertical-align: middle;
+                    line-height: 1;
+                    display: none;
+                     
+                    }
+                }
+            }
+            &:hover{
+                 .right{
+                    .item__delete--btn{
+                        display: block;
+                        color:#2472e1;
+                    }
+                    .item__value{
+                    transform: translateX(-20px);
+                    }
+                }
+            }
+        }
+        
+    }
+    .take{
+        display: none;
+    }
+    .see{
+        display: none;
+    }
+    .shop{
+        display: none;
+    }
+    .sleep{
+        display:none;
+    }
+    .etc{
+        display: none;
+    }
+    .calculator{
+            background-color:#e5e5e5;
+            width:32%;
+            height:450px;
+            float:right;
+            margin-top:15px;
+            padding:20px 10px;
+            position: relative;
+            z-index: 1;
+            button.close{
+                background:none;
+                position: absolute;
+                top:-50px;
+                left:320px;
+                border:none;
+                display: block;
+                display: none;
+                &:focus{
+                    outline:none;
+                }
+                span.close-button{   
+                    width:32px;
+                    height:32px;
+                    display:block;
+                    background-image: url(../image/close.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    
+                }
+            }
+            .select_icon{
+               padding-bottom: 10px;
+                .add_type{
+                     float: left;
+                    font-family: inherit;
+                    }
+                 .right{
+                    float: right;
+                    span{
+                        font-size: 70%;
+                        vertical-align: 2px;
+                    }
+                }
+            }
+           
+            .calculate_value{
+                width:100%;
+                height:70px;
+                background-color:#fff;
+                text-align: center;
+                #display{
+                    width:100%;
+                    height:70px;
+                    background-color:#fff;
+                    text-align: left;
+                    text-indent: 10px;
+                    font-family: inherit;
+                    font-size: 120%;
+                    border:none;
+                }
+            }
+            .title{
+                width:100%;
+                margin-top: 10px;
+                input{
+                    width:100%;
+                height:35px;
+                background-color: #fff;
+                border:none;
+                font-family: inherit;
+                font-size: 100%;
+                text-align: center;
+               
+                }
+            }
+            .keys{
+                width:100%;
+                border:1px #d3d3d3 solid;
+                margin-top: 10px;
+                box-sizing: border-box;
+                border-left:none;
+                border-bottom:none;
+               button{
+                   font-size: 90%;
+                   float:left;
+                   width:25%;
+                   height:45px;
+                   line-height: 45px;
+                   text-align: center;
+                   display: inline-block;
+                   background-color: #fff;
+                   border-left:1px #d3d3d3 solid;
+                   border-bottom:1px #d3d3d3 solid;
+                   border-right:none;
+                   border-top:none;
+                   background:none;
+                   background-color: #fff;
+                    &:focus{
+                        outline:none;
+                    }
+                   }
+                  .clear{
+                      width:37.5%;
+                  }
+                  .backspace{
+                      width:37.5%;
+                  }
+                  .change_sign{
+                      width:25%;
+                  }
+                }
+            .add__btn{
+                width:100%;
+                height:50px;
+                background-color: #4fc3ff;
+                margin-top: 10px;
+                text-align: center;
+                line-height: 50px;
+                font-size: 130%;
+                border:none;
+                display: block;
+                &:focus{
+                    outline:none;
+                }
+                span{
+                    color:#fff;
+                    font-size: 85%;
+                    vertical-align: top;
+                }
+                i{
+                    font-weight: 400;
+                    color:#fff;
+                }
+            }
+             
+        }
+     }
+          .totalall__expenses{
+                float:left;
+                width:100%;
+                position: relative;
+                z-index: 1;
+                margin-top:15px;
+                .type{
+                    .card__expenses{
+                        width:50%;
+                        height:50px;
+                         float:left;
+                        text-align: center;
+                        font-size: 130%;
+                         .right{
+                             width:70px;
+                            margin:0 auto;
+                             .equal{
+                                 float:left;
+                             }
+                             .card__expenses--value{
+                                 float:right;
+                             }
+                         }
+                    }
+                    .cash__expenses{
+                        float:right;
+                        width:50%;
+                        height:50px;
+                        text-align: center;
+                        font-size: 130%;
+                        .right{
+                            width:70px;
+                            margin:0 auto;
+                             .equal{
+                                 float:left;
+                             }
+                             .cash__expenses--value{
+                                 float:right;
+                             }
+                        }
+                    
+                    }
+                   &:after{
+                       display: block;
+                       content: "";
+                       clear: both;
+                   }
+                }
+                .total__expenses{
+                    margin-top: 15px;
+                    background-color: #73a7e5;
+                    width:100%;
+                    height:60px;
+                    text-align: center;
+                    .total_container{
+                        width:220px;
+                        height:100%;
+                        line-height: 60px;
+                        font-size:160%;
+                        margin:0 auto;
+                        padding-left: 40px;
+                        letter-spacing: 3px;
+                        color:#fff;
+                        .total__expenses--title{
+                            float: left;
+                            margin-right: 20px;
+                            
+                        }
+                        .total__expenses--value{
+                            float: left;
+                            
+                        }
+                    }
+                }
+            }
+            .takeTotal{
+                display: none;
+            }
+            .seeTotal{
+                display: none;
+            }
+            .shopTotal{
+                display: none;
+            }
+            .etcTotal{
+                display: none;
+            }
+            .sleepTotal{
+                display: none;
+            }
+            
+        }   
+       
+.chart{
+    float: left;
+    width:22%;
+    height:100%;
+    
+    .donut{
+        #donutchart{
+        position: relative;
+        left:-50px;
+        height:100%;
+        rect{
+            fill:rgba(255,255,255,0);
+            
+        }
+    }
+    .table{
+        margin-left: 20px;
+        width:310px;
+        
+        ul{
+            li{
+                padding-bottom: 15px;
+                .item{
+                    float:left;
+                    position: relative;
+                    z-index: 1;
+                    background-color: #fff;
+                    padding-right: 5px;
+                }
+                .price{
+                    float: right;
+                    padding-right: 50px;
+                    position: relative;
+                    z-index: 1;
+                    background-color: #fff;
+                    padding-left: 5px;
+                }
+                .line{
+                    display: block;
+                    clear: both;
+                    position: relative;
+                    border-top:1px #ccc solid;
+                    top:-10px;
+                    }
+                }
+            }
+        }    
+    }
+    .pie{
+        #piechart{
+        position: relative;
+        left:-50px;
+        rect{
+            fill:rgba(255,255,255,0);
+            
+        }
+    }
+        .table2{
+            margin-left: 20px;
+            width:310px;
+            ul{
+                li{
+                   padding-bottom: 15px;
+                   .payment{
+                       float:left;
+                        position: relative;
+                        z-index: 1;
+                        background-color: #fff;
+                        padding-right: 5px;
+                   }
+                   .using{
+                       float: right;
+                        padding-right: 50px;
+                        position: relative;
+                        z-index: 1;
+                        background-color: #fff;
+                        padding-left: 5px;
+                   }
+                   .line{
+                       display: block;
+                        clear: both;
+                        position: relative;
+                        border-top:1px #ccc solid;
+                        top:-10px;
+                   }
+                   .travel__expenses--title{
+                       float:left;
+                        position: relative;
+                        z-index: 1;
+                        background-color: #fff;
+                        padding-right: 5px;
+                   }
+                   .travel__expenses--value{
+                       float: right;
+                        padding-right: 50px;
+                        position: relative;
+                        z-index: 1;
+                        background-color: #fff;
+                        padding-left: 5px;
+                   }
+                }
+            }
+        }    
+    }
+    
+}    
+   
+   

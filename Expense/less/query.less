@@ -1,0 +1,185 @@
+@media screen and (max-width:1200px){
+    header{
+        button.mobile-menu{
+            display: inline-block;
+        }
+    }
+    nav{
+        display: none;
+        width: 200px;
+        overflow-y: visible;
+        ul {
+            li {
+                width: 100%;
+                padding-left: 0;
+                a {
+                    display: inline-block;
+                }
+                i {
+                    padding-left: 49px;
+                }
+            }
+        }
+    }
+    .wrapper{
+         margin: 0 auto;
+        .main-contents{
+            width:100%;
+            h2{
+                button.chart-button{
+                    display: block;
+                }
+            }
+             
+            .container{
+                .expenses__list{
+                    width:100%;
+                    padding:20px 0;
+                    button.add{
+                        display: block;
+                    }
+                    .item{
+                        padding:0 80px;
+                    }
+                }
+                .calculator{
+                        float: none;
+                        clear: left;
+                        display: none;
+                        width:300px;
+                        
+                    }
+                }
+            
+        }
+        .chart{
+            width:100%;
+            position: relative;
+            top:30px;
+            
+           .donut{
+               #donutchart{
+                  position: absolute;
+                  top:0;
+                  left:0;
+               }
+               .table{
+                   width:50%;
+                  position: absolute;
+                  top:35px;
+                  left:40%;
+               }
+           }
+           .pie{
+                position: relative;
+                top:320px;
+               #piechart{
+                   position: absolute;
+                  top:0;
+                  left:0;
+               }
+               .table2{
+                   width:50%;
+                  position: absolute;
+                  top:90px;
+                  left:40%;
+               }
+           }
+        }
+    }
+}
+
+@media screen and (max-width:992px){
+     .wrapper{
+       .chart{
+           .donut{
+               .table{
+                   width:40%;
+                   left:50%;
+               }
+           }
+           .pie{
+               .table2{
+                   width:40%;
+                   left:50%;
+               }
+           }
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    .wrapper{
+       .main-contents{
+           .date_bar{
+               ul{
+                   li{
+                       width:8.45%;
+                   }
+                   li:nth-child(10){
+                       display: none;
+                   }
+                   li:nth-child(9){
+                       display: none;
+                   }
+               }
+           }
+           
+        }
+        .chart{
+           .donut{
+               #donutchart{
+                   left:56%;
+                   transform: translateX(-50%);
+               }
+               .table{
+                   width:100%;
+                   left:0;
+                   top:310px;
+               }
+           }
+           .pie{
+               top:550px;
+               #piechart{
+                   left:56%;
+                   transform: translateX(-50%);
+               }
+               .table2{
+                   top:310px;
+                   width:100%;
+                   left:0;
+               }
+           }
+        }
+    }
+}
+
+@media screen and (max-width:480px){
+    .wrapper{
+        .main-contents{
+            .expense_icon_collection{
+                ul{
+                    li{
+                        width:19%;
+                        padding:0;
+                        margin: 1.5% 6%;
+                    }
+                }
+            }
+            .date_bar{
+                   ul{
+                       li{
+                           width:11.4%;
+                       }
+                       li:nth-child(7){
+                           display: none;
+                       }
+                       li:nth-child(8){
+                           display: none;
+                       }
+                   }
+               }
+            }
+        }
+    
+    }

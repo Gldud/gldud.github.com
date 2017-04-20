@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Traveler</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Traveler is an application to help people record travel memories and have special travel experiences with our travel coaching.">
+    <meta name="keywords" content="Travel app, Travel record app, Travel coaching">
+    <link rel="stylesheet" href="css/import.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+   <title></title>
+</head>
+<body>
+    <!--<div class="alert">-->
+        
+    <!--</div>-->
+    <header>
+        <div class="wrapper clearfix">
+            <button class="mobile-menu">
+               <span>mobile navigation</span>
+            </button>
+            <div class="top-btn">
+                <a href="#" class="btn myaccount">My account</a>
+                <a href="#" class="btn logout">Log out</a>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper clearfix">
+        <nav>
+            <button>
+                <i class="ion-close-round"></i>
+                <span>Close menu</span>
+            </button>
+            <ul>
+                <li>
+                    <i class="ion-ios-location"></i>
+                    <a href="#">Myanmar</a>
+                </li>
+                <li>
+                    <i class="ion-android-walk"></i>
+                    <a href="#">footprint</a>
+                </li>
+                <li>
+                    <i class = "ion-social-usd"></i>
+                    <a href="#">expense</a>
+                </li>
+                <li>
+                    <i class="ion-ios-compose"></i>
+                    <a href="#">journal</a>
+                </li>
+                <li>
+                    <i class="ion-images"></i>
+                    <a href="#">gallery</a>
+                </li>
+                <li>
+                    <i class="ion-archive"></i>
+                    <a href="#">stroage</a>
+                </li>
+                <li>
+                    <i class="ion-chatbox"></i>
+                    <a href="#">message</a>
+                </li>
+                <li>
+                    <i class = "ion-ios-gear"></i>
+                    <a href="#">setting</a>
+                </li>
+                <li>
+                    <i class="ion-android-alert"></i>
+                    <a href="#">help</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="main-contents">
+            <h2>
+                <span>expense</span>
+                <button class="chart-button">
+                    <span></span>
+                </button>
+            </h2>
+            <div class="date">
+                <div class="select_date">
+                    <i class="ion-android-calendar"></i>
+                    <span>Oct 17 2015 - Oct 25 2015</span>
+                </div>
+                <div class="date_bar">
+                    <ul>
+                        <li>
+                            <i class="ion-chevron-left"></i>
+                        </li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li>19</li>
+                        <li>20</li>
+                        <li>21</li>
+                        <li>22</li>
+                        <li>23</li>
+                        <li>24</li>
+                        <li>25</li>
+                        <li>
+                            <i class="ion-chevron-right"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="expense_icon_collection">
+                <ul class="expense_icon">
+                    <li class="on">
+                        <span class="eati icon" id="menu0" >eat icon</span>
+                        <span class="description">eat</span>
+                    </li>
+                    <li>
+                        <span class="takei icon" id="menu1">take icon</span>
+                        <span class="description">take</span>
+                    </li>
+                    <li>
+                        <span class="seei icon" id="menu2">see icon</span>
+                        <span class="description">see</span>
+                    </li>
+                    <li >
+                        <span class="shopi icon " id="menu3">shop icon</span>
+                        <span class="description">shop</span>
+                    </li>
+                    <li>
+                        <span class="sleepi icon" id="menu4">sleep icon</span>
+                        <span class="description" >sleep</span>
+                    </li>
+                    <li>
+                        <span class="etci icon" id="menu5">etc icon</span>
+                        <span class="description">etc</span>
+                    </li>
+                </ul>
+            </div>
+           <div class="container clearfix">
+                 <div class="expenses__list eat">
+                      <!--<div class="item clearfix" id="income-0">-->
+                      <!--  <img src="image/credit-card.png">-->
+                      <!--  <div class="item_description">car</div>-->
+                      <!--  <div class="right clearfix">-->
+                      <!--    <div class="item__value">- 900.00</div>-->
+                      <!--    <div class="item__delete">-->
+                      <!--        <button class="item__delete--btn"><i class="ion-ios-trash-outline"></i></button>-->
+                      <!--    </div>-->
+                      <!--    </div>-->
+                      <!--</div>-->
+                    <button class="add">
+                        <span>add icon</span>
+                    </button>
+                </div>
+                <div class="expenses__list take">
+                    <button class="add">
+                        <span>add icon</span>
+                    </button>
+                </div>
+                <div class="expenses__list see">
+                    <button class="add">
+                        <span>add icon</span>
+                    </button>
+                </div>
+                <div class="expenses__list shop">
+                    <button class="add">
+                        <span>add icon</span>
+                    </button>
+                </div>
+                <div class="expenses__list sleep">
+                    <button class="add">
+                        <span>add icon</span>
+                    </button>
+                </div>
+                <div class="expenses__list etc">
+                    <button class="add">
+                        <span>add icon</span>
+                    </button>
+                </div>    
+            <div class="calculator">
+                <button class="close" type="button"><span class="close-button"></span></button>
+                <div class="select_icon">
+                    <select class="add__type">
+                        <option value="cash" selected>cash</option>
+                        <option value="card">card</option>
+                    </select>
+                    <div class="right clearfix">
+                        <i class="ion-arrow-swap"></i>
+                        <span>Myanmar(Kyat)</span>
+                    </div>
+                </div>
+                <div class="calculate_value">
+                    <input type="number" name="number" id = "display" placeholder = 0 />
+                </div>
+                <div class="title">
+                    <input type="text" class="add__description" name="title" placeholder="title"/>
+                </div>
+                <div class="keys clearfix">
+                    <button value="1" onClick="addChar('1')">1</button>
+                    <button value="2" onClick="addChar('2')">2</button>
+                    <button value="3" onClick="addChar('3')">3</button>
+                    <button class="operator" value="+" onClick="addOperand('+')">+</button>
+                    <button value="4" onClick="addChar('4')">4</button>
+                    <button value="5" onClick="addChar('5')">5</button>
+                    <button value="6" onClick="addChar('6')">6</button>
+                    <button class="operator" value="-" onClick="addOperand('-')">-</button>
+                    <button value="7" onClick="addChar('7')">7</button>
+                    <button value="8" onClick="addChar('8')">8</button>
+                    <button value="9" onClick="addChar('9')">9</button>
+                    <button class="operator" value="/" onClick="addOperand('/')">÷</button>
+                    <button>.</button>
+                    <button value="0" onClick="addChar('0')">0</button>
+                    <button class="eval" value="=" name="enter" onClick="Calculate()">=</button>
+                    <button class="operator" value="*" onClick="addOperand('*')">x</button>
+                    <button class="clear" value ="C" onClick="Clear()">C</button>
+                    <button class="backspace" value ="<-"  onClick="BackSpace()">←</button>
+                    <button class="change_sign" value ="+/-" onClick="changeSign()">+ / -</button>
+                </div>
+                <button class="add__btn">
+                    <span>save</span>
+                    <i class="ion-ios-checkmark-outline"></i>
+                </button> 
+            </div>
+        </div>
+        <div class="totalall__expenses eatTotal">
+            <div class="type">
+                <div class="card__expenses">
+                    <div class="card__expenses--title">card</div>
+                    <div class="right clearfix">
+                        <div class="equal">=</div>
+                    <div class="card__expenses--value">2000</div>
+               </div>
+            </div>
+            <div class="cash__expenses">
+                <div class="cash__expenses--title">cash</div>
+                <div class="right clearfix">
+                    <div class="equal">=</div>
+                    <div class="cash__expenses--value">3500</div>
+                </div>
+            </div>
+        </div>
+        <div class="total__expenses">
+            <div class="total_container">
+                <div class="total__expenses--title">Total</div>
+                <div class="total__expenses--value">5500</div>
+            </div>
+           </div>
+        </div>
+        <div class="totalall__expenses takeTotal">
+            <div class="type">
+                <div class="card__expenses">
+                    <div class="card__expenses--title">card</div>
+                    <div class="right clearfix">
+                    <div class="equal">=</div>
+                    <div class="card__expenses--value">0</div>
+                </div>
+            </div>
+            <div class="cash__expenses">
+                <div class="cash__expenses--title">cash</div>
+                    <div class="right clearfix">
+                        <div class="equal">=</div>
+                        <div class="cash__expenses--value">0</div>
+                    </div>
+                </div>
+            </div>
+            <div class="total__expenses">
+                <div class="total_container">
+                    <div class="total__expenses--title">Total</div>
+                    <div class="total__expenses--value">0</div>
+                </div>
+            </div>
+        </div>
+        <div class="totalall__expenses seeTotal">
+            <div class="type">
+                <div class="card__expenses">
+                    <div class="card__expenses--title">card</div>
+                    <div class="right clearfix">
+                    <div class="equal">=</div>
+                    <div class="card__expenses--value">0</div>
+                </div>
+            </div>
+            <div class="cash__expenses">
+                <div class="cash__expenses--title">cash</div>
+                    <div class="right clearfix">
+                        <div class="equal">=</div>
+                    <div class="cash__expenses--value">0</div>
+               </div>
+            </div>
+        </div>
+        <div class="total__expenses">
+            <div class="total_container">
+                <div class="total__expenses--title">Total</div>
+                <div class="total__expenses--value">0</div>
+            </div>
+        </div>
+    </div>
+    <div class="totalall__expenses shopTotal">
+        <div class="type">
+            <div class="card__expenses">
+                <div class="card__expenses--title">card</div>
+                <div class="right clearfix">
+                    <div class="equal">=</div>
+                    <div class="card__expenses--value">0</div>
+                </div>
+            </div>
+            <div class="cash__expenses">
+                <div class="cash__expenses--title">cash</div>
+                <div class="right clearfix">
+                    <div class="equal">=</div>
+                    <div class="cash__expenses--value">0</div>
+                </div>
+            </div>
+        </div>
+            <div class="total__expenses">
+                <div class="total_container">
+                    <div class="total__expenses--title">Total</div>
+                    <div class="total__expenses--value">0</div>
+                </div>
+            </div>
+        </div>
+        <div class="totalall__expenses sleepTotal">
+            <div class="type">
+            <div class="card__expenses">
+                <div class="card__expenses--title">card</div>
+                <div class="right clearfix">
+                    <div class="equal">=</div>
+                    <div class="card__expenses--value">0</div>
+                </div>
+            </div>
+            <div class="cash__expenses">
+                <div class="cash__expenses--title">cash</div>
+                <div class="right clearfix">
+                    <div class="equal">=</div>
+                    <div class="cash__expenses--value">0</div>
+                </div>
+            </div>
+        </div>
+        <div class="total__expenses">
+            <div class="total_container">
+                <div class="total__expenses--title">Total</div>
+                <div class="total__expenses--value">0</div>
+            </div>
+        </div>
+    </div>
+    <div class="totalall__expenses etcTotal">
+        <div class="type">
+            <div class="card__expenses">
+                <div class="card__expenses--title">card</div>
+                <div class="right clearfix">
+                    <div class="equal">=</div>
+                    <div class="card__expenses--value">0</div>
+                </div>
+            </div>
+            <div class="cash__expenses">
+                <div class="cash__expenses--title">cash</div>
+                <div class="right clearfix">
+                    <div class="equal">=</div>
+                    <div class="cash__expenses--value">0</div>
+                </div>
+            </div>
+        </div>
+        <div class="total__expenses">
+            <div class="total_container">
+                <div class="total__expenses--title">Total</div>
+                <div class="total__expenses--value">0</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="chart">
+    <div class="donut">
+        <div id="donutchart"></div>
+            <div class="table">
+                <ul>
+                    <li>
+                        <span class="item">Food&drink</span>
+                        <span class="price displayEatTotal">0</span>
+                        <span class="line"></span>    
+                    </li>
+                    <li>
+                        <span class="item">Transportation</span>
+                        <span class="price displayTakeTotal">0</span>
+                        <span class="line"></span>
+                    </li>
+                    <li>
+                        <span class="item">Sightseeing</span>
+                        <span class="price displaySeeTotal">0</span>
+                        <span class="line"></span>
+                    </li>
+                    <li>
+                        <span class="item">Shopping</span>
+                        <span class="price displayShopTotal">0</span>
+                        <span class="line"></span>
+                    </li>
+                    <li>
+                        <span class="item">Accommodation</span>
+                        <span class="price displaySleepTotal">0</span>
+                        <span class="line"></span>
+                    </li>
+                    <li>
+                        <span class="item">Others</span>
+                        <span class="price displayEtcTotal">0</span>
+                        <span class="line"></span>
+                    </li>
+                </ul>
+            </div>  
+        </div>
+        <div class="pie">
+            <div id="piechart"></div>
+            <div class="table2">
+                <ul>
+                    <li>
+                       <span class="payment">Card</span>
+                       <span class="using card">0</span>
+                       <span class = "line"></span>
+                    </li>
+                    <li>
+                       <span class="payment">Cash</span>
+                       <span class="using cash">0</span>
+                       <span class = "line"></span>
+                    </li>
+                    <li>
+                       <span class="travel__expenses--title">Total Expenses</span>
+                       <span class="travel__expenses--value">0</span>
+                       <span class = "line"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>  
+    </div>
+</div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="traveler.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+          var expense,expenseTotal,idx,src,src_change,displayExpenseTotal;
+           $('.mobile-menu').click(function() {
+               $('nav').css({'display':'block','position':'fixed','top':'0','left':'-100%','z-index':'10'})
+               .animate({left:0});
+               $('nav button').css({'display':'block'});
+               
+            })
+           
+           $('.chart-button').click(function() {
+               var move = $('.chart').offset().top
+               $('html,body').css({'overflow-x':'visible'})
+               $('html,body').animate({scrollTop:move},1000)
+               
+               console.log('dd');
+           })
+           
+            $('nav button').click(function() {
+               $('nav').animate({left:"-200px"});
+               
+           })
+           
+           $(window).resize(function(){
+              $('html,body').css({'overflow-x':'hidden'})
+                if($(this).width()>1200){
+                    $('nav').css({'position':'static','display':'block','z-index':'2'});
+                    $('.calculator').css({'position':'static','display':'block'});
+                    $('.calculator').removeClass('open')
+                    $('nav').removeClass('open')
+                    $('.bl').fadeOut(function(){
+                        $(this).remove();
+                    })
+                    $('nav button').css({'display':'none'});
+                     $('.calculator .close').css({'display':'none'})
+                }else if($(this).width()<1200 && !$('.calculator').is('.open') &&!$('nav').is('.open') ){
+                   $('nav').css({'display':'none'})
+                   $('.calculator').css({'display':'none'});
+                   $('.calculator').addClass('open');
+                   $('nav').addClass('open');
+                    
+                }
+            })
+           
+            $('.add').click(function(){
+               bl();
+                var $calculator = $('.calculator');
+                var w = $calculator.width();
+                var h = $calculator.height();//스크롤탑의 중간으로 바꿔
+                
+                $calculator.show().css({
+                    position:'absolute',
+                    left:'50%',
+                    top:'100px',
+                    'z-index':'100',
+                    marginLeft:function(){
+                        return '-'+(w / 2)+"px"
+                    }
+                 });
+                 $('.calculator .close').css({'display':'block'})
+              })
+             
+              var close = function(){
+                $('.bl').fadeOut(function(){
+                    $(this).remove();
+                })
+                $('.calculator').css({'display':'none'})
+            
+                
+            }
+              
+            $('body').on('click','.bl',close);
+            
+            $('.close').click(close);
+          
+            function bl(){
+                $('body').prepend('<div class="bl"></div>');
+            }
+       
+        $('.expense_icon_collection ul li').click(function(){
+              expense = ['.eat','.take','.see','.shop','.sleep','.etc'];
+              src=[ 'url(image/eat.png)','url(image/take.png)','url(image/see.png)',
+              'url(image/shop.png)','url(image/sleep.png)','url(image/etc.png)'];
+              src_change=['url(image/eat_change.png)','url(image/take_change.png)','url(image/see_change.png)'
+              ,'url(image/shop_change.png)','url(image/sleep_change.png)','url(image/etc_change.png)'];
+              $('.expense')
+              idx = $(this).index();
+              selectIdx = idx;
+              selectClass =expense[idx];
+              expenseTotal = ['.eatTotal','.takeTotal','.seeTotal','.shopTotal','.sleepTotal','.etcTotal'];
+              selectTotalIdx = idx;
+              selectTotalClass = expenseTotal[idx];
+              displayExpenseTotal = ['.displayEatTotal','.displayTakeTotal','.displaySeeTotal','.displayShopTotal','.displaySleepTotal','.displayEtcTotal'];
+              displayExpenseTotalClass=displayExpenseTotal[selectIdx];
+              $(this).addClass('on').siblings().removeClass();
+              $(expense[idx]).css('display','block');
+              $(expenseTotal[idx]).css('display','block');
+              
+            for(i=0;i<expense.length;i++){
+              $(expense[i]).not($(expense[idx])).css('display','none');
+              $(expenseTotal[i]).not($(expenseTotal[idx])).css('display','none');
+              $("#menu"+i).css({'background-image': src[i],'width':'40px','height':'40px'});
+           } 
+              $(this).children('.icon').css({'background-image':src_change[idx],'width':'50px','height':'50px'});
+          document.getElementById("display").value = "";
+        });
+        
+        
+        DrawChart(); 
+        DrawChart2()//챠트그리기 
+   })
+   
+   
+  </script>
+</body>
+</html>
