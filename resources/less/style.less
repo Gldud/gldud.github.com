@@ -40,10 +40,15 @@ body,html{
             li{
                 .uppercase;
                 font-size: 17px;
+                padding-top:15px;
+                a{
+                    text-decoration: none;
+                }
             }
         }
     }
     .contact-information{
+        margin: 50px 0;
         ul{
             li{
                 font-size: 17px;
@@ -117,13 +122,17 @@ body,html{
                 span{
                     display:block;
                     width:400px;
-                    .textCenter;
-                    margin:0 auto;
-                   
+                    margin:10px auto 10px auto;
+                    line-height:19px;
                 }
                 a{
                     font-size: 100%;
                     .uppercase;
+                    text-decoration:underline;
+                    color:#000;
+                    &:visited,active{
+                        color:#000;    
+                    }
                 }
             }
             li:first-child{
