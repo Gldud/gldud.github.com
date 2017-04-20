@@ -1,5 +1,5 @@
 /* ====max-width768px====*/
-@media screen and (max-width:1044px){
+@media screen and (max-width:1024px){
     body{
         position: relative;
         padding-bottom:300px;
@@ -34,6 +34,11 @@
         }
     }
     .about_me{
+        section{
+            width:96%;
+            margin:0 auto;
+            padding:30px 2%;
+        }
         .title{
             width:100%;
             text-align: center;
@@ -43,11 +48,41 @@
             margin:0 1%;
             margin-top:30px;
         }
+        .section-skill{
+            .contents{
+                width:86%;
+                margin:0 10%;
+                .box{
+                    width:49%;
+                    margin-top:25px;
+                    
+                }
+                .box:nth-child(3){
+                    clear: both;
+                }
+                .box:nth-child(even){
+                    padding-left: 10%;
+                }
+            }
+        }
     }
     .portfolio_description{
+        overflow: visible;
+        h2{
+            margin-left: 0;
+        }
+        span{
+            margin-left: 0;
+        }
         ul.portfolio_wrapper{
+            .textCenter;
             >li{
-                width:100%;
+                width:96%;
+                margin:0 auto;
+                padding:20px 2%;
+                ul{
+                    text-align: left;
+                }
             }
         }
     }

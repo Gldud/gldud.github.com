@@ -51,6 +51,9 @@ body {
 .right-column::-webkit-scrollbar {
   display: none;
 }
+.portfolio_description::-webkit-scrollbar {
+  width: 0 !important;
+}
 /*-------------------------------------------*/
 /*left*/
 /*-------------------------------------------*/
@@ -200,6 +203,7 @@ body {
   visibility: hidden;
 }
 .about_me section {
+  width: 100%;
   padding: 30px 0;
 }
 .about_me section:after {
@@ -252,8 +256,11 @@ body {
 /*-------------------------------------------*/
 .portfolio_description {
   float: left;
+  height: 100vh;
+  -ms-overflow-style: none;
+  overflow-y: scroll;
   width: 80%;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .portfolio_description:after {
   content: ".";
@@ -265,15 +272,19 @@ body {
 .portfolio_description h2 {
   text-transform: uppercase;
   text-align: center;
-  margin-left: -40px;
+  margin-left: -10px;
 }
-.portfolio_description span {
+.portfolio_description > span {
   width: 100%;
   text-align: center;
   display: block;
-  margin-left: -20px;
+  margin-left: -5px;
   margin-top: 10px;
   color: #777;
+}
+.portfolio_description ul.portfolio_wrapper {
+  width: 100%;
+  margin-top: 15px;
 }
 .portfolio_description ul.portfolio_wrapper:after {
   content: ".";
@@ -283,9 +294,8 @@ body {
   visibility: hidden;
 }
 .portfolio_description ul.portfolio_wrapper > li {
-  padding: 20px;
-  width: 48%;
-  padding-left: 2%;
+  width: 49.5%;
+  padding: 10px 1%;
   list-style: none;
   vertical-align: top;
   display: inline-block;
@@ -296,10 +306,12 @@ body {
 }
 .portfolio_description ul.portfolio_wrapper > li span {
   font-size: 16px;
-  line-height: 21px;
+  line-height: 23px;
   text-align: left;
-  margin: 0;
+  display: block;
+  width: 100%;
   color: #000;
+  margin-top: 10px;
 }
 .portfolio_description ul.portfolio_wrapper > li a {
   text-decoration: none;
@@ -316,7 +328,7 @@ body {
   text-transform: capitalize;
 }
 /* ====max-width768px====*/
-@media screen and (max-width: 1044px) {
+@media screen and (max-width: 1024px) {
   body {
     position: relative;
     padding-bottom: 300px;
@@ -353,6 +365,11 @@ body {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
   }
+  .about_me section {
+    width: 96%;
+    margin: 0 auto;
+    padding: 30px 2%;
+  }
   .about_me .title {
     width: 100%;
     text-align: center;
@@ -362,8 +379,39 @@ body {
     margin: 0 1%;
     margin-top: 30px;
   }
+  .about_me .section-skill .contents {
+    width: 86%;
+    margin: 0 10%;
+  }
+  .about_me .section-skill .contents .box {
+    width: 49%;
+    margin-top: 25px;
+  }
+  .about_me .section-skill .contents .box:nth-child(3) {
+    clear: both;
+  }
+  .about_me .section-skill .contents .box:nth-child(even) {
+    padding-left: 10%;
+  }
+  .portfolio_description {
+    overflow: visible;
+  }
+  .portfolio_description h2 {
+    margin-left: 0;
+  }
+  .portfolio_description span {
+    margin-left: 0;
+  }
+  .portfolio_description ul.portfolio_wrapper {
+    text-align: center;
+  }
   .portfolio_description ul.portfolio_wrapper > li {
-    width: 100%;
+    width: 96%;
+    margin: 0 auto;
+    padding: 20px 2%;
+  }
+  .portfolio_description ul.portfolio_wrapper > li ul {
+    text-align: left;
   }
   .right-column ul li {
     width: 98%;
