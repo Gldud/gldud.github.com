@@ -11,12 +11,21 @@
     height:100%;
     }
     .left-column{
-        .nav{
-            position: fixed;
-            top:0;
-            left:0;
+        h1{
+            float: left;
+        }
+        nav{
+            margin-top: 30px;
+            float: right;
+            ul{
+                li{
+                    padding:0 20px;
+                    display: inline-block;
+                }
+            }
         }
         .contact-information{
+            margin:50px 0;
             position: absolute;
             bottom:0;
             left:50%;
@@ -38,6 +47,14 @@
         ul.portfolio_wrapper{
             >li{
                 width:100%;
+            }
+        }
+    }
+    
+    .right-column{
+        ul{
+            li:last-child{
+                padding-bottom: 80px;
             }
         }
     }

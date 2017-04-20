@@ -30,6 +30,7 @@ html {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 15px;
+  background-color: #f6f8f8;
 }
 .left-column,
 .right-column,
@@ -56,16 +57,30 @@ html {
   overflow-y: scroll;
   text-align: center;
 }
+.left-column h1 {
+  margin: 0;
+}
+.left-column h1 a {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-image: url(../img/hy_logo.png);
+  margin: 0 auto;
+}
+.left-column nav {
+  margin-top: 70px;
+}
 .left-column nav ul li {
   text-transform: uppercase;
   font-size: 17px;
   padding-top: 15px;
+  list-style: none;
 }
 .left-column nav ul li a {
   text-decoration: none;
 }
 .left-column .contact-information {
-  margin: 50px 0;
+  margin: 180px 0;
 }
 .left-column .contact-information ul li {
   font-size: 17px;
@@ -79,14 +94,20 @@ html {
 .left-column .contact-information ul li:nth-child(2) {
   text-transform: none;
 }
+.left-column .contact-information ul li:last-child {
+  text-transform: none;
+  width: 240px;
+  margin: 0 auto;
+  line-height: 23px;
+}
 /*-------------------------------------------*/
 /*middle*/
 /*-------------------------------------------*/
 .middle-column {
   width: 30%;
   text-align: center;
-  border-left: 1px #f2f2f2 solid;
-  border-right: 1px #f2f2f2 solid;
+  border-left: 1px #fff solid;
+  border-right: 1px #fff solid;
 }
 .middle-column h2 {
   font-size: 18px;
@@ -125,7 +146,7 @@ html {
 .right-column ul li {
   text-align: center;
   overflow: hidden;
-  padding-top: 25px;
+  padding: 13px 0 ;
 }
 .right-column ul li img {
   width: 500px;
@@ -148,7 +169,7 @@ html {
   color: #000;
 }
 .right-column ul li:first-child {
-  padding-top: 10px;
+  padding-top: 25px;
 }
 .main-contents {
   float: left;
@@ -252,33 +273,35 @@ html {
   clear: both;
   visibility: hidden;
 }
-.portfolio_description ul.portfolio_wrapper > li {
+.portfolio_description ul.portfolio_wrapper li {
   padding: 20px;
   width: 48%;
   padding-left: 2%;
   list-style: none;
   vertical-align: top;
   display: inline-block;
-}
-.portfolio_description ul.portfolio_wrapper > li img {
   width: 500px;
+  max-width: 500px;
+}
+.portfolio_description ul.portfolio_wrapper li img {
+  width: 100%;
   height: auto;
 }
-.portfolio_description ul.portfolio_wrapper > li span {
+.portfolio_description ul.portfolio_wrapper li span {
   font-size: 16px;
   line-height: 21px;
   text-align: left;
   margin: 0;
   color: #000;
 }
-.portfolio_description ul.portfolio_wrapper > li a {
+.portfolio_description ul.portfolio_wrapper li a {
   text-decoration: none;
   color: #342291;
 }
-.portfolio_description ul.portfolio_wrapper > li ul {
+.portfolio_description ul.portfolio_wrapper li ul {
   margin-top: 20px;
 }
-.portfolio_description ul.portfolio_wrapper > li ul li {
+.portfolio_description ul.portfolio_wrapper li ul li {
   margin-bottom: 5px;
   display: inline-block;
   padding: 3px 12px;
@@ -300,12 +323,19 @@ html {
     width: 100%;
     height: 100%;
   }
-  .left-column .nav {
-    position: fixed;
-    top: 0;
-    left: 0;
+  .left-column h1 {
+    float: left;
+  }
+  .left-column nav {
+    margin-top: 30px;
+    float: right;
+  }
+  .left-column nav ul li {
+    padding: 0 20px;
+    display: inline-block;
   }
   .left-column .contact-information {
+    margin: 50px 0;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -326,5 +356,8 @@ html {
   }
   .portfolio_description ul.portfolio_wrapper > li {
     width: 100%;
+  }
+  .right-column ul li:last-child {
+    padding-bottom: 80px;
   }
 }

@@ -14,6 +14,7 @@ body,html{
     text-rendering: optimizeLegibility;
     .box-sizing;
     font-size: 15px;
+    background-color: #f6f8f8;
 }
 
 .left-column,.right-column,.middle-column{
@@ -35,20 +36,33 @@ body,html{
     -ms-overflow-style: none;
     overflow-y: scroll;
     .textCenter;
+    h1{
+        margin:0;
+        a{
+            display: block;
+            width:100px;
+            height:100px;
+            background-image: url(../img/hy_logo.png);
+            margin:0 auto;
+        }
+    }
     nav{
+        margin-top: 70px;
         ul{
             li{
                 .uppercase;
                 font-size: 17px;
                 padding-top:15px;
+                list-style: none;
                 a{
                     text-decoration: none;
                 }
             }
+            
         }
     }
     .contact-information{
-        margin: 50px 0;
+        margin: 180px 0;
         ul{
             li{
                 font-size: 17px;
@@ -61,6 +75,12 @@ body,html{
                 &:nth-child(2){
                     text-transform:none;
                 }
+                &:last-child{
+                    text-transform: none;
+                    width:240px;
+                    margin:0 auto;
+                    line-height: 23px;
+                }
             }
         }
     }
@@ -72,8 +92,8 @@ body,html{
 .middle-column{
     width:30%;
     .textCenter;
-    border-left:1px #f2f2f2 solid;
-    border-right:1px #f2f2f2 solid;
+    border-left:1px #fff solid;
+    border-right:1px #fff solid;
     h2{
         font-size: 18px;
         font-weight: 500;
@@ -115,7 +135,7 @@ body,html{
             li{
                 .textCenter;
                 overflow: hidden;
-                padding-top:25px;
+                padding:13px 0 ;
                 img{
                     width:500px;
                     height:300px;
@@ -137,7 +157,7 @@ body,html{
                 }
             }
             li:first-child{
-                padding-top: 10px;
+                padding-top: 25px;
             }
         }
 }
@@ -228,16 +248,19 @@ body,html{
 
     ul.portfolio_wrapper{
         .clearfix();
-        >li{
+        li{
             padding:20px;
             width:48%;
             padding-left: 2%;
             list-style: none;
             vertical-align: top;
             display: inline-block;
+            width:500px;
+            max-width: 500px;
             img{
-                width:500px;
+                width:100%;
                 height:auto;
+                
             }
             span{
                 font-size: 16px;
