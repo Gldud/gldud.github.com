@@ -94,8 +94,7 @@ html {
   text-transform: uppercase;
 }
 .middle-column .content {
-  padding: 15px;
-  line-height: 30px;
+  padding: 25px;
 }
 .middle-column .content a {
   text-transform: uppercase;
@@ -104,6 +103,7 @@ html {
 .middle-column .content p {
   font-size: 17px;
   text-align: justify;
+  line-height: 32px;
 }
 .middle-column img {
   width: 300px;
