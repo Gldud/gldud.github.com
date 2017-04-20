@@ -30,7 +30,10 @@ html {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 15px;
-  background-color: #f6f8f8;
+  background-color: #fff;
+}
+body {
+  overflow: hidden;
 }
 .left-column,
 .right-column,
@@ -106,8 +109,10 @@ html {
 .middle-column {
   width: 30%;
   text-align: center;
-  border-left: 1px #fff solid;
-  border-right: 1px #fff solid;
+  -ms-overflow-style: none;
+  overflow-y: scroll;
+  border-left: 1px #f2f2f2 solid;
+  border-right: 1px #f2f2f2 solid;
 }
 .middle-column h2 {
   font-size: 18px;
@@ -115,7 +120,8 @@ html {
   text-transform: uppercase;
 }
 .middle-column .content {
-  padding: 25px;
+  width: 98%;
+  padding: 15px 1%;
 }
 .middle-column .content a {
   text-transform: uppercase;
@@ -147,16 +153,19 @@ html {
   text-align: center;
   overflow: hidden;
   padding: 13px 0 ;
+  width: 80%;
+  margin: 0 auto;
 }
 .right-column ul li img {
-  width: 500px;
+  width: 100%;
   height: 300px;
 }
 .right-column ul li span {
   display: block;
-  width: 400px;
   margin: 10px auto 10px auto;
   line-height: 19px;
+  width: 98%;
+  padding: 0 1%;
 }
 .right-column ul li a {
   font-size: 100%;
@@ -273,35 +282,33 @@ html {
   clear: both;
   visibility: hidden;
 }
-.portfolio_description ul.portfolio_wrapper li {
+.portfolio_description ul.portfolio_wrapper > li {
   padding: 20px;
   width: 48%;
   padding-left: 2%;
   list-style: none;
   vertical-align: top;
   display: inline-block;
-  width: 500px;
-  max-width: 500px;
 }
-.portfolio_description ul.portfolio_wrapper li img {
+.portfolio_description ul.portfolio_wrapper > li img {
   width: 100%;
   height: auto;
 }
-.portfolio_description ul.portfolio_wrapper li span {
+.portfolio_description ul.portfolio_wrapper > li span {
   font-size: 16px;
   line-height: 21px;
   text-align: left;
   margin: 0;
   color: #000;
 }
-.portfolio_description ul.portfolio_wrapper li a {
+.portfolio_description ul.portfolio_wrapper > li a {
   text-decoration: none;
   color: #342291;
 }
-.portfolio_description ul.portfolio_wrapper li ul {
+.portfolio_description ul.portfolio_wrapper > li ul {
   margin-top: 20px;
 }
-.portfolio_description ul.portfolio_wrapper li ul li {
+.portfolio_description ul.portfolio_wrapper > li ul li {
   margin-bottom: 5px;
   display: inline-block;
   padding: 3px 12px;
@@ -313,6 +320,7 @@ html {
   body {
     position: relative;
     padding-bottom: 300px;
+    overflow: visible;
   }
   .left-column,
   .right-column,
@@ -356,6 +364,10 @@ html {
   }
   .portfolio_description ul.portfolio_wrapper > li {
     width: 100%;
+  }
+  .right-column ul li {
+    width: 98%;
+    padding: 10px 1%;
   }
   .right-column ul li:last-child {
     padding-bottom: 80px;
