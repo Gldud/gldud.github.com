@@ -166,7 +166,7 @@ header .get_started_form {
   width: 450px;
   text-align: center;
   position: absolute;
-  top: 50%;
+  top: 62%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -1311,8 +1311,8 @@ footer .row .span-1-of-4 ul li a i {
 footer .row .span-1-of-4 ul.social-links {
   font-size: 120%;
 }
-/* ====max-width1044px====*/
-@media screen and (max-width: 1044px) {
+/* ====max-width1024px====*/
+@media screen and (max-width: 1024px) {
   /* ----------------------------------------------- */
   /* About */
   /* ----------------------------------------------- */
