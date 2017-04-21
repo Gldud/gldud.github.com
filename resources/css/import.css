@@ -301,7 +301,7 @@ body {
 }
 .portfolio_description ul.portfolio_wrapper > li {
   width: 48%;
-  padding: 20px 2%;
+  padding: 15px 2%;
   list-style: none;
   vertical-align: top;
   display: inline-block;
@@ -408,6 +408,7 @@ body {
   }
   .portfolio_description {
     overflow: visible;
+    margin-top: 20px;
   }
   .portfolio_description h2 {
     margin-left: 0;
@@ -417,6 +418,7 @@ body {
   }
   .portfolio_description ul.portfolio_wrapper {
     text-align: center;
+    margin-left: 0;
   }
   .portfolio_description ul.portfolio_wrapper > li {
     width: 96%;
