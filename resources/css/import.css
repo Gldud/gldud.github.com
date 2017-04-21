@@ -61,6 +61,7 @@ body {
   width: 20%;
   -ms-overflow-style: none;
   overflow-y: scroll;
+  border-right: 2px #f2f2f2 solid;
   text-align: center;
 }
 .left-column h1 {
@@ -84,6 +85,7 @@ body {
 }
 .left-column nav ul li a {
   text-decoration: none;
+  color: #000;
 }
 .left-column .contact-information {
   margin: 180px 0;
@@ -114,8 +116,7 @@ body {
   text-align: center;
   -ms-overflow-style: none;
   overflow-y: scroll;
-  border-left: 1px #f2f2f2 solid;
-  border-right: 1px #f2f2f2 solid;
+  border-right: 2px #f2f2f2 solid;
 }
 .middle-column h2 {
   font-size: 18px;
@@ -127,8 +128,13 @@ body {
   padding: 15px 1%;
 }
 .middle-column .content a {
+  color: #000;
   text-transform: uppercase;
   text-decoration: underline;
+}
+.middle-column .content a:visited,
+.middle-column .content a active {
+  color: #000;
 }
 .middle-column .content p {
   font-size: 17px;
@@ -156,7 +162,7 @@ body {
   text-align: center;
   overflow: hidden;
   padding: 13px 0 ;
-  width: 80%;
+  width: 65%;
   margin: 0 auto;
 }
 .right-column ul li img {
@@ -192,7 +198,8 @@ body {
 /*-------------------------------------------*/
 .about_me {
   margin-top: 10px;
-  width: 80%;
+  margin-left: 2%;
+  width: 78%;
   float: left;
 }
 .about_me:after {
@@ -228,7 +235,7 @@ body {
 }
 .about_me .contents p {
   font-size: 16px;
-  line-height: 24px;
+  line-height: 29px;
 }
 .about_me .section-skill .contents .box {
   width: 24%;
@@ -272,19 +279,18 @@ body {
 .portfolio_description h2 {
   text-transform: uppercase;
   text-align: center;
-  margin-left: -10px;
 }
 .portfolio_description > span {
   width: 100%;
   text-align: center;
   display: block;
-  margin-left: -5px;
   margin-top: 10px;
   color: #777;
 }
 .portfolio_description ul.portfolio_wrapper {
   width: 100%;
   margin-top: 15px;
+  margin-left: 2%;
 }
 .portfolio_description ul.portfolio_wrapper:after {
   content: ".";
@@ -294,8 +300,8 @@ body {
   visibility: hidden;
 }
 .portfolio_description ul.portfolio_wrapper > li {
-  width: 49.5%;
-  padding: 10px 1%;
+  width: 48%;
+  padding: 20px 2%;
   list-style: none;
   vertical-align: top;
   display: inline-block;
@@ -332,7 +338,7 @@ body {
   body {
     position: relative;
     padding-bottom: 300px;
-    overflow: visible;
+    overflow-y: visible;
   }
   .left-column,
   .right-column,
@@ -342,6 +348,9 @@ body {
     float: none;
     width: 100%;
     height: 100%;
+  }
+  .left-column {
+    border-right: none;
   }
   .left-column h1 {
     float: left;
@@ -365,10 +374,13 @@ body {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
   }
+  .about_me {
+    margin-left: 0;
+  }
   .about_me section {
     width: 96%;
     margin: 0 auto;
-    padding: 30px 2%;
+    padding: 0 2% 50px 2%;
   }
   .about_me .title {
     width: 100%;
@@ -386,6 +398,7 @@ body {
   .about_me .section-skill .contents .box {
     width: 49%;
     margin-top: 25px;
+    margin-bottom: 20px;
   }
   .about_me .section-skill .contents .box:nth-child(3) {
     clear: both;
@@ -419,5 +432,19 @@ body {
   }
   .right-column ul li:last-child {
     padding-bottom: 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about_me .section-skill .contents {
+    text-align: center;
+  }
+  .about_me .section-skill .contents .box {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    margin-left: -20px;
+  }
+  .about_me .section-skill .contents .box:nth-child(even) {
+    padding-left: 0;
   }
 }

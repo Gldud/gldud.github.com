@@ -3,7 +3,8 @@
     body{
         position: relative;
         padding-bottom:300px;
-        overflow: visible;
+        overflow-y: visible;
+        
     }
     .left-column,.right-column,.middle-column
     ,.about_me,.portfolio_description{
@@ -12,6 +13,8 @@
     height:100%;
     }
     .left-column{
+        border-right:none;
+        
         h1{
             float: left;
         }
@@ -34,10 +37,11 @@
         }
     }
     .about_me{
+        margin-left:0;
         section{
             width:96%;
             margin:0 auto;
-            padding:30px 2%;
+            padding:0 2% 50px 2%;
         }
         .title{
             width:100%;
@@ -55,7 +59,7 @@
                 .box{
                     width:49%;
                     margin-top:25px;
-                    
+                    margin-bottom: 20px;
                 }
                 .box:nth-child(3){
                     clear: both;
@@ -101,6 +105,23 @@
     
 }
 @media screen and (max-width:768px){
+    .about_me{
+        .section-skill{
+            .contents{
+                .textCenter;
+                .box{
+                    width:100%;
+                    margin-top:25px;
+                    margin-bottom: 20px;
+                    margin-left: -20px;
+                }
+                .box:nth-child(even){
+                    padding-left: 0;
+                }
+                
+            }
+        }    
+    }
     
 }
 @media screen and (max-width:480px){

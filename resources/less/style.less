@@ -39,6 +39,7 @@ body{
     width:20%;
     -ms-overflow-style: none;
     overflow-y: scroll;
+    border-right:2px #f2f2f2 solid;
     .textCenter;
     h1{
         margin:0;
@@ -60,6 +61,7 @@ body{
                 list-style: none;
                 a{
                     text-decoration: none;
+                    color:#000;
                 }
             }
             
@@ -98,8 +100,8 @@ body{
     .textCenter;
     -ms-overflow-style: none;
     overflow-y: scroll;
-    border-left:1px #f2f2f2 solid;
-    border-right:1px #f2f2f2 solid;
+    
+    border-right:2px #f2f2f2 solid;
     h2{
         font-size: 18px;
         font-weight: 500;
@@ -110,8 +112,13 @@ body{
         padding:15px 1%;
         
         a{
+            color:#000;
             .uppercase;
             text-decoration: underline;
+            &:visited,active{
+                        color:#000;    
+                    }
+            
         }
         p{
             font-size: 17px;
@@ -143,7 +150,7 @@ body{
                 .textCenter;
                 overflow: hidden;
                 padding:13px 0 ;
-                width:80%;
+                width:65%;
                 margin:0 auto;
                 img{
                     width:100%;
@@ -183,8 +190,9 @@ body{
 /*-------------------------------------------*/
 .about_me{
     margin-top: 10px;
+    margin-left:2%;
     .clearfix();
-    width:80%;
+    width:78%;
     float:left;
     section{
         width:100%;
@@ -207,7 +215,7 @@ body{
         float:left;
         p{
             font-size: 16px;
-            line-height:24px;
+            line-height:29px;
         }
     }
     .section-skill{
@@ -251,13 +259,13 @@ body{
     h2{
         .uppercase;
         .textCenter;
-        margin-left: -10px;
+        
     }
     >span{
         width:100%;
         .textCenter;
         display: block;
-        margin-left: -5px;
+        
        margin-top:10px;
         color:#777;
     }
@@ -266,9 +274,10 @@ body{
         .clearfix();
         width:100%;
         margin-top: 15px;
+        margin-left: 2%;
         >li{
-            width:49.5%;
-            padding:10px 1%;
+            width:48%;
+            padding:20px 2%;
             list-style: none;
             vertical-align: top;
             display: inline-block;
