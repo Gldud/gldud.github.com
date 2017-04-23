@@ -108,14 +108,16 @@ body{
         text-transform:uppercase;
     }
     .content{
-        width:98%;
-        padding:15px 1%;
+        width:96%;
+        padding:15px 2%;
         
         a{
+            display: block;
+            margin-top: 30px;
             color:#000;
             .uppercase;
             text-decoration: underline;
-            &:visited,active{
+            &:visited,link{
                         color:#000;    
                     }
             
@@ -281,7 +283,12 @@ body{
             list-style: none;
             vertical-align: top;
             display: inline-block;
-            
+            &:nth-child(3){
+                padding-top: 30px;
+            }
+            &:nth-child(4){
+                padding-top: 30px;
+            }
             img{
                 width:100%;
                 height:auto;

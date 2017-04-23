@@ -124,16 +124,18 @@ body {
   text-transform: uppercase;
 }
 .middle-column .content {
-  width: 98%;
-  padding: 15px 1%;
+  width: 96%;
+  padding: 15px 2%;
 }
 .middle-column .content a {
+  display: block;
+  margin-top: 30px;
   color: #000;
   text-transform: uppercase;
   text-decoration: underline;
 }
 .middle-column .content a:visited,
-.middle-column .content a active {
+.middle-column .content a link {
   color: #000;
 }
 .middle-column .content p {
@@ -306,6 +308,12 @@ body {
   vertical-align: top;
   display: inline-block;
 }
+.portfolio_description ul.portfolio_wrapper > li:nth-child(3) {
+  padding-top: 30px;
+}
+.portfolio_description ul.portfolio_wrapper > li:nth-child(4) {
+  padding-top: 30px;
+}
 .portfolio_description ul.portfolio_wrapper > li img {
   width: 100%;
   height: auto;
@@ -430,7 +438,7 @@ body {
   }
   .right-column ul li {
     width: 98%;
-    padding: 10px 1%;
+    padding: 20px 1%;
   }
   .right-column ul li:last-child {
     padding-bottom: 80px;

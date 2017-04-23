@@ -105,6 +105,7 @@ header nav .navigation {
 }
 header nav .navigation .main-nav {
   list-style: none;
+  display: inline-block;
 }
 header nav .navigation .main-nav li {
   padding-left: 30px;
@@ -149,7 +150,7 @@ header nav .header-right ul li:last-child a {
 header .hero-text-box {
   position: absolute;
   width: 1140px;
-  top: 28%;
+  top: 30%;
   left: 50%;
   color: #fff;
   -webkit-transform: translateX(-50%);
@@ -166,7 +167,7 @@ header .get_started_form {
   width: 450px;
   text-align: center;
   position: absolute;
-  top: 62%;
+  top: 55%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -251,7 +252,10 @@ header .get_started_form .account span a {
 /* Mobile navi */
 .mobile-nav-icon {
   cursor: pointer;
+  float: right;
   display: none;
+  margin-top: 40px;
+  margin-right: 40px;
 }
 .mobile-nav-icon i {
   color: #fff;
@@ -1359,6 +1363,46 @@ footer .row .span-1-of-4 ul.social-links {
   }
 }
 @media screen and (max-width: 768px) {
+  .mobile-nav-icon {
+    display: inline-block;
+  }
+  header nav .navigation {
+    float: left;
+  }
+  header nav .navigation .main-nav {
+    display: none;
+    float: left;
+    margin-top: -15px;
+    margin-left: -15px;
+  }
+  header nav .navigation .main-nav li {
+    display: block;
+  }
+  header nav .navigation .main-nav li a:link,
+  header nav .navigation .main-nav li a:visited {
+    display: block;
+    border: 0;
+    padding: 10px 0;
+    font-size: 110%;
+  }
+  .sticky h1 {
+    margin-left: -30px;
+  }
+  .sticky .mobile-nav-icon {
+    margin-top: 13px;
+    margin-right: 20px;
+  }
+  .sticky .mobile-nav-icon i {
+    color: #555;
+  }
+  .sticky .navigation {
+    margin-top: 25px;
+    margin-left: 35px;
+  }
+  .sticky .navigation .main-nav li a:link,
+  .sticky .navigation .main-nav li visited {
+    padding: 10px 0;
+  }
   /* ----------------------------------------------- */
   /* About */
   /* ----------------------------------------------- */
