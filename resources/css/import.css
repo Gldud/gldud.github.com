@@ -66,6 +66,9 @@ body {
 }
 .left-column h1 {
   margin: 0;
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .left-column h1 a {
   display: block;
