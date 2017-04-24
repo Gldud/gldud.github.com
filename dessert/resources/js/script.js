@@ -253,9 +253,23 @@ $(function() {
 });
 
 /* Mobile nav*/
+
+var nav = $('.js--main-nav');
+var icon = $('.js--nav-icon i');
+
+$(window).resize(function(){
+  if($(this).width()>768){
+    $('.main-nav').css('display','block');
+  }else if($(this).width()<768){
+    $('.main-nav').css('display','none');
+    if(icon.hasClass('ion-close-round')){
+      icon.addClass('ion-navicon-round');
+      icon.removeClass('ion-close-round');
+    }
+  }
+})
+
 $('.js--nav-icon').click(function() {
-    var nav = $('.js--main-nav');
-    var icon = $('.js--nav-icon i');
     if(icon.hasClass('ion-navicon-round')){
       icon.addClass('ion-close-round');
       icon.removeClass('ion-navicon-round')
@@ -264,5 +278,4 @@ $('.js--nav-icon').click(function() {
       icon.removeClass('ion-close-round')
     }
     nav.slideToggle(200);
-    
 })
