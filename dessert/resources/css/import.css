@@ -96,7 +96,6 @@ header nav h1 a.logo-white {
   background-image: url(../img/logo-white.png);
   width: 128px;
   height: 128px;
-  margin-left: 20px;
 }
 header nav .navigation {
   float: right;
@@ -273,7 +272,6 @@ header .get_started_form .account span a {
 }
 .sticky h1 a.logo-black {
   display: block;
-  margin-left: 80px;
 }
 .sticky h1 a.logo-white {
   display: none;
@@ -1386,7 +1384,7 @@ footer .row .span-1-of-4 ul.social-links {
     font-size: 110%;
   }
   .sticky h1 {
-    margin-left: -30px;
+    margin-left: 20px;
   }
   .sticky .mobile-nav-icon {
     margin-top: 13px;
@@ -1402,6 +1400,15 @@ footer .row .span-1-of-4 ul.social-links {
   .sticky .navigation .main-nav li a:link,
   .sticky .navigation .main-nav li visited {
     padding: 10px 0;
+  }
+  header .get_started_form {
+    display: none;
+  }
+  header .hero-text-box {
+    top: 40%;
+  }
+  header .hero-text-box strong {
+    font-size: 180%;
   }
   /* ----------------------------------------------- */
   /* About */
