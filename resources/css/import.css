@@ -40,7 +40,7 @@ body {
 .middle-column {
   float: left;
   height: 100vh;
-  padding: 30px 10px;
+  padding: 50px 10px;
 }
 .middle-column::-webkit-scrollbar {
   width: 0 !important;
@@ -65,7 +65,7 @@ body {
   text-align: center;
 }
 .left-column h1 {
-  margin: 0;
+  margin: -35px 0 0 0;
   text-indent: 100%;
   overflow: hidden;
   white-space: nowrap;
@@ -345,6 +345,11 @@ body {
 }
 /* ====max-width768px====*/
 @media screen and (max-width: 1024px) {
+  .left-column,
+  .right-column,
+  .middle-column {
+    padding: 30px 10px;
+  }
   body {
     position: relative;
     padding-bottom: 300px;
@@ -364,6 +369,10 @@ body {
   }
   .left-column h1 {
     float: left;
+    margin-top: -30px;
+  }
+  .left-column h1 a {
+    margin: 10px;
   }
   .left-column nav {
     margin-top: 30px;
