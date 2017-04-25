@@ -46,6 +46,9 @@ header {
   height: 50px;
   background-color: #13458c;
 }
+header h1 {
+  float: left;
+}
 header button.mobile-menu {
   display: inline-block;
   background: none;
