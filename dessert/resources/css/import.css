@@ -14,10 +14,10 @@ li {
 }
 header {
   background-color: rgba(0, 0, 0, 0.4);
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../css/img/cake.jpg);
-  background: -moz-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../css/img/cake.jpg);
-  background: -ms-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../css/img/cake.jpg);
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../css/img/cake.jpg);
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../css/img/cake-min.jpg);
+  background: -moz-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../css/img/cake-min.jpg);
+  background: -ms-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../css/img/cake-min.jpg);
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../css/img/cake-min.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -253,7 +253,7 @@ header .get_started_form .account span a {
   cursor: pointer;
   float: right;
   display: none;
-  margin-top: 40px;
+  margin-top: 50px;
   margin-right: 40px;
 }
 .mobile-nav-icon i {
@@ -840,9 +840,6 @@ section.section-menu .row .span-1-of-3 .menu .menu_name span {
 }
 .section-cakes .table ul.cake-type li button:focus,
 .section-cakes .table ul.cake-type li button active {
-  padding: 1px 4px;
-  border: 2.5px #fa3469 solid;
-  border-radius: 50%;
   outline: none;
 }
 .section-cakes .box {
@@ -1186,10 +1183,10 @@ section.section-menu .row .span-1-of-3 .menu .menu_name span {
 /* ----------------------------------------------- */
 .section-get_started_form {
   background-color: rgba(0, 0, 0, 0.2);
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../img/background-cake.jpg);
-  background: -moz-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../img/background-cake.jpg);
-  background: -ms-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../img/background-cake.jpg);
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../img/background-cake.jpg);
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../img/background-cake-min.jpg);
+  background: -moz-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../img/background-cake-min.jpg);
+  background: -ms-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../img/background-cake-min.jpg);
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../img/background-cake-min.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 70vh;

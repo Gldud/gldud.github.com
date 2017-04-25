@@ -191,9 +191,9 @@ button.btn2 span.google_signup {
 }
 /* ====INDEX====*/
 header.main-header {
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../css/img/hero.jpg);
-  background-image: -ms-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../css/img/hero.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../css/img/hero.jpg);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../css/img/hero-min.jpg);
+  background-image: -ms-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../css/img/hero-min.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../css/img/hero-min.jpg);
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -561,9 +561,9 @@ section.founder p.three {
 }
 /* ====HOW IT WORKS====*/
 header.header-how_it_works {
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../css/img/friend.jpg);
-  background-image: -ms-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../css/img/friend.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../css/img/friend.jpg);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../css/img/friend-min.jpg);
+  background-image: -ms-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../css/img/friend-min.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../css/img/friend-min.jpg);
   height: 80vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -814,9 +814,9 @@ section.faq .wow {
 }
 /* ====COACHING SERVICE====*/
 header.header-our_coaches {
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/coach.jpeg);
-  background-image: -ms-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/coach.jpeg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/coach.jpeg);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../img/coach-min.jpeg);
+  background-image: -ms-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../img/coach-min.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../img/coach-min.jpeg);
   margin-bottom: 60px;
   height: 80vh;
   background-repeat: no-repeat;

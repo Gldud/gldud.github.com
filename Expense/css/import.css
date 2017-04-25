@@ -367,7 +367,7 @@ nav li:first-child:hover i {
 .main-contents .container .expenses__list .item .right .item__delete {
   float: left;
 }
-.main-contents .container .expenses__list .item .right .item__delete .item__delete--btn {
+.main-contents .container .expenses__list .item .right .item__delete .item__delete-btn {
   font-size: 22px;
   background: none;
   border: none;
@@ -377,7 +377,7 @@ nav li:first-child:hover i {
   line-height: 1;
   display: none;
 }
-.main-contents .container .expenses__list .item:hover .right .item__delete--btn {
+.main-contents .container .expenses__list .item:hover .right .item__delete-btn {
   display: block;
   color: #2472e1;
 }
