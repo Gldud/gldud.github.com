@@ -107,7 +107,6 @@ body {
 }
 .left-column .contact-information ul li:last-child {
   text-transform: none;
-  width: 240px;
   margin: 0 auto;
   line-height: 23px;
 }
