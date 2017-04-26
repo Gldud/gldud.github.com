@@ -216,7 +216,7 @@ body {
 }
 .about_me section {
   width: 100%;
-  padding: 30px 0;
+  padding: 50px 0;
 }
 .about_me section:after {
   content: ".";
@@ -272,7 +272,7 @@ body {
   -ms-overflow-style: none;
   overflow-y: scroll;
   width: 80%;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 .portfolio_description:after {
   content: ".";
