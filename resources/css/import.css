@@ -65,17 +65,18 @@ body {
   text-align: center;
 }
 .left-column h1 {
-  margin: -35px 0 0 0;
+  margin: -35px auto 0 auto;
   text-indent: 100%;
   overflow: hidden;
   white-space: nowrap;
+  width: 110px;
+  height: auto;
 }
 .left-column h1 a {
   display: block;
   width: 100px;
   height: 100px;
   background-image: url(../img/hy_logo.png);
-  margin: 0 auto;
 }
 .left-column nav {
   margin-top: 70px;
