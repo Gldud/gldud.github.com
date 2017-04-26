@@ -316,10 +316,11 @@ body {
 }
 .portfolio_description ul.portfolio_wrapper > li:nth-child(4) {
   padding-top: 30px;
+  margin-bottom: 50px;
 }
 .portfolio_description ul.portfolio_wrapper > li img {
   width: 100%;
-  height: auto;
+  height: 450px;
 }
 .portfolio_description ul.portfolio_wrapper > li span {
   font-size: 16px;
@@ -444,6 +445,9 @@ body {
     width: 96%;
     margin: 0 auto;
     padding: 20px 2%;
+  }
+  .portfolio_description ul.portfolio_wrapper > li img {
+    height: auto;
   }
   .portfolio_description ul.portfolio_wrapper > li ul {
     text-align: left;
