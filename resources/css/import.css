@@ -127,7 +127,7 @@ body {
   text-transform: uppercase;
 }
 .middle-column .content {
-  width: 96%;
+  width: 100%;
   padding: 15px 2%;
 }
 .middle-column .content a {
@@ -295,6 +295,7 @@ body {
 .portfolio_description ul.portfolio_wrapper {
   width: 100%;
   margin-top: 15px;
+  margin-bottom: 50px;
   margin-left: 2%;
 }
 .portfolio_description ul.portfolio_wrapper:after {
@@ -316,7 +317,6 @@ body {
 }
 .portfolio_description ul.portfolio_wrapper > li:nth-child(4) {
   padding-top: 30px;
-  margin-bottom: 50px;
 }
 .portfolio_description ul.portfolio_wrapper > li img {
   width: 100%;
