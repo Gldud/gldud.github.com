@@ -278,6 +278,7 @@ header .get_started_form .account span a {
 }
 .sticky .navigation {
   margin-top: 20px;
+  margin-right: 20px;
 }
 .sticky .navigation .main-nav li a:link,
 .sticky .navigation .main-nav li visited {
@@ -1413,9 +1414,6 @@ footer .row .span-1-of-4 ul.social-links {
   .section-about_our_cake .feature {
     padding-left: 70px;
   }
-  /* ----------------------------------------------- */
-  /* How it works */
-  /* ----------------------------------------------- */
   /* ----------------------------------------------- */
   /* MENU */
   /* ----------------------------------------------- */
