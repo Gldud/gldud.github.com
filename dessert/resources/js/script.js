@@ -74,7 +74,7 @@ $(function() {
         .addClass('on')
         .siblings()
         .removeClass();
-               idx ++ // 그리고 idx 증가해 (다음 )
+               idx ++
                if(idx == $view.length || idx > $view.length){
                     idx = 0;
                   $view.eq(idx).css({
